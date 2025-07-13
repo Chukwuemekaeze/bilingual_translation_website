@@ -19,7 +19,7 @@ export default function App() {
     setTranslatedText(""); // clear previous output
   
     try {
-      const res = await fetch("http://127.0.0.1:5000/translate", {
+      const res = await fetch("https://bilingual-backend-eca.onrender.com/translate", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

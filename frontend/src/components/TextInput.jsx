@@ -15,7 +15,7 @@ import React from "react";
 export default function TextInput({ value, onChange }) {
   return (
     <div className="mb-4">
-      <label className="block text-sm font-medium text-gray-600 mb-1">Enter Text</label>
+      <label className="block text-base font-semibold text-gray-700 mb-2">Enter Text</label>
       <textarea
         value={value}             // Controlled value passed from parent
         onChange={onChange}       // Controlled change handler

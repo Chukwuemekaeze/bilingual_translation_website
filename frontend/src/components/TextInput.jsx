@@ -1,3 +1,15 @@
+/**
+ * TextInput.jsx
+ * -----------------------------
+ * A controlled component for user input.
+ * Renders a styled <textarea> for entering text to be translated.
+ *
+ * Props:
+ * - value (string): the current value of the textarea
+ * - onChange (function): handler function called when user types
+ */
+
+
 import React from "react";
 
 export default function TextInput({ value, onChange }) {
@@ -5,9 +17,9 @@ export default function TextInput({ value, onChange }) {
     <div className="mb-4">
       <label className="block text-sm font-medium text-gray-600 mb-1">Enter Text</label>
       <textarea
-        value={value}
-        onChange={onChange}
-        rows={5}
+        value={value}             // Controlled value passed from parent
+        onChange={onChange}       // Controlled change handler
+        rows={5}                  // Height of the textarea (5 lines)
         placeholder="Type something to translate..."
         className="w-full border rounded p-3 focus:outline-none focus:ring focus:ring-blue-300"
       />
